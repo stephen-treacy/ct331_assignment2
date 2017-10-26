@@ -5,6 +5,7 @@
 (provide count_top_level)
 (provide count_instances)
 (provide count_instances_tr)
+(provide count_instances_deep)
 
 (define (ins_beg el lst)
   (append (cons el '()) lst))
@@ -29,3 +30,5 @@
     [(empty? lst) total]
     [(equal? item (car lst)) (helper item (cdr lst) (+ 1 total))]
     [else (helper item (cdr lst) total)]))
+    
+
