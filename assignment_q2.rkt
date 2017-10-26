@@ -30,5 +30,3 @@
     [(empty? lst) total]
     [(equal? item (car lst)) (helper item (cdr lst) (+ 1 total))]
     [else (helper item (cdr lst) total)]))
-    
-
